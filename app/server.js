@@ -13,7 +13,7 @@ app.use(morgan('combined'));
 var port = process.env.PORT || 8080;
 var message = process.env.MESSAGE || "Hello world!";
 
-app.get('/', function (req, res) {
+app.get('/hello', function (req, res) {
     res.render('home', {
       message: message,
       platform: os.type(),
